@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/sachin8516/myAPP.git"
+    "url": "git+ssh://git@github.com:sachin8516/vueApp.git"
   },
   "author": "Sachin Yadav",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/sachin8516/myAPP/issues"
+    "url": "https://github.com/sachin8516/vueApp/issues"
   },
-  "homepage": "https://github.com/sachin8516/myAPP#readme",
+  "homepage": "https://github.com/sachin8516/vueApp#readme",
   "dependencies": {
     "@babel/core": "^7.1.2",
     "autoprefixer": "^9.4.2",
@@ -42,7 +42,7 @@
     "webpack": "^4.23.1",
     "webpack-cli": "^3.1.2",
     "webpack-dev-middleware": "^3.4.0",
-    "webpack-dev-server": "^3.1.10",
+    "webpack-dev-server": "^3.1.14",
     "webpack-hot-middleware": "^2.24.3"
   }
 }
