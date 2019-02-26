@@ -6,3 +6,4 @@ require("jquery");
 require("popper.js");
 require("bootstrap/dist/js/bootstrap.min");
 require("../index.html");
+require("./app");

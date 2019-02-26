@@ -1,6 +1,7 @@
 const path = require("path");
 const webpack = require("webpack");
 const HTMLWebpackPlugin = require("html-webpack-plugin");
+const {VueLoaderPlugin} = require("vue-loader");
 
 module.exports = {
     entry: {
@@ -22,6 +23,14 @@ module.exports = {
     },
     module: {
         rules: [
+            {
+                test: /\.vue$/,
+                use: [
+                    {
+                        loader: "vue-loader"
+                    }
+                ]
+            },
             {
                 test: /\.js$/,
                 use: [
@@ -69,6 +78,7 @@ module.exports = {
         ]
     },
     plugins: [
+        new VueLoaderPlugin(),
         new webpack.HotModuleReplacementPlugin(),
         new HTMLWebpackPlugin({
             template: "./src/index.html"
